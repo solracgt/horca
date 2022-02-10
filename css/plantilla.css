@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;	
+}
+/* Sin nada para etiquetas, "." para clases y # para id */
+
+img {
+	width: 100%;
+	border-radius: 1em;
+	/*align-content: center;*/
+}
+
+#cajon {
+	width: 1200px;
+	height: 800px;
+	margin: 0.5em auto; /* Para centrar en el canvas */
+	/* padding: 0.5em; */
+	background: black;
+}
+
+#cab{
+	height: 10%;
+	background: cadetblue;
+	margin: 0.5em;
+	text-align: center;
+	border-radius: 1em; /* Con esto se redondean los contornos */
+}
+
+#nav{
+	height: 6%;
+	background: darkslategrey;
+	margin: 0.5em;
+	border-radius: 1em;
+}
+
+#cnt {
+	width: 100%;
+	height: 76%;
+	/*margin: 0.5em;*/
+	/*background: yellow;*/
+}
+
+#pie{
+	height: 4%;
+	background: cadetblue;
+	border-radius: 1em;
+	padding: 2px;
+	margin: 0.5em;
+	margin-top: 0.5em;
+	text-align: center;
+	position: relative;
+}
+
+#izq {
+	width: 49%;
+	height: 100%;
+	/*background: sienna; */
+	border-radius: 1em;
+	float: left;
+	margin-left: 0.4em;
+}
+
+#der {
+	width: 49%;
+	height: 100%;
+	/*background: sienna; */
+	border-radius: 1em;
+	float: right;
+	margin-right: 0.4em;
+}
+
+#horca {
+	width: 100%;
+	height: 100%;
+	border-radius: 1em;
+}
+
+#horca2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 1em;
+}
+
+.art {
+	width: 98%;
+	height: 22%;
+	background: #424242;
+	margin: 0.5em;
+	border-radius: 1em;
+	color: white;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+/* Ocultar un objeto */ 
+.invisible {
+	display: none;
+}
+
+
+/* media query  para que se acomode a otros dispositivos */
+@media screen and (max-width: 800px){
+	
+	#cajon {
+		width: 790px;
+		height: 1000px;
+	}
+	
+	#cab {
+		width: 100%;
+		height: 10%;
+	}
+	#nav {
+		width: 100%;
+		height: 5%;
+	}
+	#cnt{
+		width: 100%;
+		height: 77%;
+	}
+	#pie {
+		width: 100%;
+		height: 5%;
+	}
+
+	#izq {
+		width: 120%;
+		height: 50%;
+		/*
+		margin-top: 0.4em;
+
+		margin-right: 0.4em;
+		*/
+	}
+
+	#horca {
+		width: 80%;
+		height: 80%;
+	}
+
+	#der {
+		width: 120%;
+		height: 60%;
+		float: left;
+		margin-left: 0.5em;
+	}
+
+	#horca2 {
+		width: 80%;
+		height: 80%;
+	}
+
+
+	.art {
+		height: 23%;
+	}
+}
+/* Para dispositivos mas pequeños */ 
+@media screen and (max-width: 400px){
+	.contenedor {
+		width: 100%;
+	}
+	aside {
+		display: none;
+	}
+}
+
+/*==============================================
+            Clases adicionales            
+  ==============================================*/
+/* Boton rojo, se convierte a verde */
+.styled {
+	margin: 6px;
+	border: 0;
+	line-height: 2.5;
+	padding: 0 20px;
+	font-size: 1 rem;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px, 1px, 1px #000;
+	border-radius: 10px;
+	background-color: blue;
+	/* rgba(220,0,0,1);*/
+	background-image: linear-gradient(to top left, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0));
+	box-shadow: inset 2px 2px 3px rgba(255,255,255,0.6), inset -2px -2px 3px rgba(0,0,0,0.6);
+}
+.styled:hover {
+	background-color: green;
+	/*rgba(8, 192, 75, 0.736);*/
+}
+.styled:active {
+	box-shadow: inset -2px -2px 3px rgba(255,255,255,0.6), inset 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+/* ----------------------------------------------------------------------- */
+/*   Otras clases que he encontrado en otros sitios y me pueden funcionar  */
+/* ----------------------------------------------------------------------- */
+/* Transición de un objeto */ 

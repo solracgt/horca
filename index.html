@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/plantilla.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>El Ahorcado</title>
+</head>
+<body>
+	<div id="cajon">
+		<div id="cab">
+			<h1>AluraLatam-One Challenge No. 2</h1>
+			<h2>El juego del ahorcado</h2>
+		</div>
+		<div id="nav">
+			<button class="styled" id="jugar" onclick="iniciarJuego();">Iniciar Juego</button>
+			<button class="styled" id="nvaplb" onclick="agregarPalabra();">Agregar Palabra</button>
+			<input class = "text-input" type="text" id="txt1" placeholder="Ingrese nueva palabra" size=28></input>
+		</div>
+		<div id="cnt">
+			<div id="izq">
+				<canvas id="horca" width="600px" height="500px"></canvas>
+			</div>
+			<div id="der">
+				<canvas id="horca2" width="600px" height="500px"></canvas>
+			</div>
+		</div>
+		<div id="pie">
+			<h4>Carlos Raúl López López - solrac.gt - Guatemala C. A.</h4>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/horca.js"></script>	
+</html>
